@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/home.css">
+  <!-- google fonts: Roboto, Archivo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Hot beans Web</title>
+</head>
+
+<body>
+  <%- include("../partials/header.ejs") %>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="wrapper">
+        <div class="hero-wrapper">
+          <div class="hero-contents">
+            <p class="hero-description">welcome to hot beans web</p>
+            <h2 class="hero-headline">A web developing website here to help you find your perfect job.</h2>
+
+            <button class="hero-btn">
+              <a href="#">Join us today</a>
+              <i class='bx bx-arrow-back'></i>
+            </button>
+          </div>
+
+          <img class="hero-img" src="/assets/hero-img.png" alt="hero image">
+        </div>
+
+        <div class="hero-sponsors">
+          <div class="hero-sponsor-description">
+            <img src="/assets/employees.png" alt="employees">
+            <p>+5000 Employees since 2018</p>
+          </div>
+
+          <p>It's no big deal, but here are some of our sponsors:</p>
+
+          <div class="hero-sponsor">
+            <img src="/assets/sponsor1.png" alt="sponsor1">
+            <img src="/assets/sponsor2.png" alt="sponsor2">
+            <img src="/assets/sponsor3.png" alt="sponsor3">
+            <img src="/assets/sponsor4.png" alt="sponsor4">
+            <img src="/assets/sponsor5.png" alt="sponsor5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us section  -->
+    <section id="about" class="about">
+      <div class="wrapper">
+        <h3 class="title">About Us</h3>
+
+        <div class="about-contents">
+          <img src="/assets/about-img.png" alt="about us image">
+          <div class="about-description">
+            <p>
+              we believe that the key to success in web development is a deep understanding of the client's business objectives, target audience, and branding. That’s why we work closely with each of our clients to gain a comprehensive understanding of their business, and then use our expertise to craft a website that is not only visually stunning, but also functional, user-friendly, and optimized for search engines.
+            </p>
+            <p>
+              We offer a wide range of web development services, including custom web design, e-commerce solutions, content management systems, and more. We pride ourselves on delivering solutions that are tailored to each client's specific needs, whether they are a small business looking to establish an online presence, or a large corporation in need of a complex web application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="services">
+      <div class="wrapper">
+        <div class="title">Our Services</div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <i class='bx bx-rocket'></i>
+            </div>
+            <h3 class="card-headline">Design</h3>
+            <p class="card-description">This pillar encompasses the visual and aesthetic aspects of a website, including layout, typography, color scheme, and imagery. A web design company must have a strong design team to create visually appealing and user-friendly websites.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i class='bx bx-chip'></i>
+            </div>
+            <h3 class="card-headline">Development</h3>
+            <p class="card-description">This pillar involves the technical aspects of building a website, including coding, testing, and optimization. A web design company must have skilled developers who can turn design concepts into functional and responsive websites.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i class='bx bxs-chess'></i>
+            </div>
+            <h3 class="card-headline">Strategy</h3>
+            <p class="card-description">This pillar focuses on the overall goals and objectives of the website, and includes aspects such as user experience, SEO, and content strategy. A web design company must have a strategic mindset to ensure that the website is not only visually appealing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our team section  -->
+    <div class="team-headline">
+      <div class="title">Our Team</div>
+      <h3 class="sub-title">Meet Our Team</h3>
+    </div>
+
+    <section class="team" id="team">
+      <div class="teams wrapper">
+        <div class="team-card">
+          <img class="team-img" src="/assets/john doe.jpg" alt="Team image">
+
+          <div class="team-card-content">
+            <p class="team-name">Michael Sanchez</p>
+            <p class="team-position">Senior Software Developer</p>
+            <p class="team-description">Lorem ipsum dolor sit amet consectetur. Orci sit proin neque eu vel et magna.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img class="team-img" src="/assets/john doe.jpg" alt="Team image">
+
+          <div class="team-card-content">
+            <p class="team-name">Michael Sanchez</p>
+            <p class="team-position">Senior Software Developer</p>
+            <p class="team-description">Lorem ipsum dolor sit amet consectetur. Orci sit proin neque eu vel et magna.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img class="team-img" src="/assets/john doe.jpg" alt="Team image">
+
+          <div class="team-card-content">
+            <p class="team-name">Michael Sanchez</p>
+            <p class="team-position">Senior Software Developer</p>
+            <p class="team-description">Lorem ipsum dolor sit amet consectetur. Orci sit proin neque eu vel et magna.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply">
+      <div class="wrapper">
+        <div class="title">Join our team</div>
+        <h3 class="sub-title">Available Positions:</h3>
+
+        <div class="apply-cards">
+          <div class="apply-card card">
+            <h3 class="card-title">Junior Front end web developer</h3>
+
+            <div class="price">
+              <p class="price-amount">£80,000 a year</p>
+            </div>
+
+            <ul class="apply-requirements">
+              <li>Wordpress</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>WooCommerce</li>
+            </ul>
+
+            <div class="btn">
+              <a href="/position1">Apply now</a>
+            </div>
+
+          </div>
+
+          <div class="apply-card card">
+            <h3 class="card-title">Junior Back end web developer</h3>
+
+            <div class="price">
+              <p class="price-amount">£85,000 a year</p>
+            </div>
+
+            <ul class="apply-requirements">
+              <li>Wordpress</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>WooCommerce</li>
+            </ul>
+
+            <div class="btn">
+              <a href="#">Apply now</a>
+            </div>
+          </div>
+
+          <div class="apply-card card">
+            <h3 class="card-title">UI/UX Designer</h3>
+
+            <div class="price">
+              <p class="price-amount">£50,000 a year</p>
+            </div>
+
+            <ul class="apply-requirements">
+              <li>Wordpress</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>WooCommerce</li>
+            </ul>
+
+            <div class="btn">
+              <a href="#">Apply now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="wrapper">
+        <div class="title">Contact Us</div>
+
+        <div class="contact-info">
+          <div class="contact-description">
+            <p>Have questions or ready to start your project? Get in touch with us!</p>
+            <p>Address: <em>Your address</em></p>
+            <p>Email: <em>Your Email</em></p>
+            <p>Phone: <em>Your Phone</em></p>
+            <p>Business Hours:</p>
+            <p>Monday - Friday: <span>9:00 AM - 5:00 PM</span></p>
+            <p>Saturday - sunday: <span>Closed</span></p>
+            <p>
+              We're here to help you turn your web development ideas into reality. Contact us today!
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <p>Send us a message.</p>
+
+            <form action="#" method="post" class="form">
+              <div class="input-group">
+                <input class="input" placeholder="Full Name" type="text" name="full name" id="fName">
+              </div>
+
+              <div class="input-group">
+                <input class="input" placeholder="Email" type="email" name="email" id="email">
+              </div>
+
+              <div class="input-group">
+                <input class="input" placeholder="Mobile Number" type="number" name="Mobile Number" id="number">
+              </div>
+
+              <div class="input-group">
+                <input class="input" placeholder="Subject" type="text" name="subject" id="subject">
+              </div>
+
+              <div class="input-group">
+                <textarea class="input" name="message" placeholder="Your message" id="message"></textarea>
+              </div>
+
+              <input class="submit-btn" type="submit" value="submit">
+            </form>
+          </div>
+        </div>
+
+        <iframe class=" map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d79617.43808668909!2d-0.10514578245362811!3d51.420601098429685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x4876015a3bb0bbf1%3A0x390cb609f7cd5609!2sHot%20Beans%20Web%20Development%2C%20High%20Street%2C%20London!3m2!1d51.4140708!2d-0.0516497!4m0!5e0!3m2!1sen!2suk!4v1715955031746!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <%- include("../partials/footer.ejs") %>
+</body>
+
+</html>

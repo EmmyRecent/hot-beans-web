@@ -1,0 +1,92 @@
+@import "globals.css";
+
+/* Header styles */
+.header {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-block: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 5.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.nav-links .nav-link a {
+  font-size: 1.125rem;
+  color: var(--color-white);
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links .nav-link a:hover {
+  color: var(--color-yellow);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.125rem;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: 1px solid var(--color-white);
+  border-radius: 0.3rem;
+  padding: 9px 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn a {
+  display: inline-block;
+  color: var(--color-white);
+}
+
+.bx-arrow-back {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.btn:hover {
+  background-color: var(--color-red);
+  border: 1px solid red;
+}
+
+.bx-x {
+  display: none;
+}
+
+.bx-menu {
+  display: none;
+}
+
+@media (width <= 900px) {
+  .logo {
+    width: 4.5rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .bx-menu {
+    display: block;
+    font-size: 3rem;
+    z-index: 100;
+  }
+}
