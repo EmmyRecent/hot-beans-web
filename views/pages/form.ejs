@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/form.css">
+  <!-- google fonts: Roboto, Archivo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Application Form</title>
+</head>
+
+<body>
+  <%- include("../partials/header.ejs") %>
+
+  <main>
+    <section class="application-form">
+      <div class="wrapper">
+        <div class="application-heading">
+          <h3>Application Form</h3>
+          <p>We will accept applications from those who do not meet all the above criteria, and those who are yet to graduate.</p>
+        </div>
+
+        <div class="container">
+          <form action="" class="form-apply">
+            <div class="input-group-apply">
+              <input type="text" placeholder="First Name" name="First Name" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="text" placeholder="Last Name" name="Last Name" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="email" placeholder="Email" name="Email" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="number" placeholder="Phone Number" name="Phone Number" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="text" placeholder="What position are you applying for" name="Position" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="text" placeholder="Link to your portfolio or linked in profile" name="profile" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="file" placeholder="Attach CV" name="CV" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="file" placeholder="Attach Resume" name="CV" class="input-apply">
+            </div>
+
+            <div class="input-group-apply">
+              <input type="text" placeholder="Why are you interested in this role?" name="why this role?" class=" input-apply">
+            </div>
+
+            <input type="submit" value="submit" class="submit-btn input-group-apply">
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- include("../partials/mfooter.ejs") %>
+</body>
+
+</html>

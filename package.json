@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run server\" \"npm run browser-sync\"",
-    "server": "nodemon index.js",
+    "server": "nodemon app.js",
     "browser-sync": "browser-sync start --proxy 'localhost:3000' --files 'public/**/*.*, views/**/*.*' --port 4000 --no-open --no-notify"
   },
   "keywords": [],

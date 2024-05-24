@@ -1,0 +1,147 @@
+@import "globals.css";
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.application-heading {
+  padding-block-start: 80px;
+}
+
+.application-heading h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-red);
+  margin-block-end: 0.93rem;
+}
+
+.application-heading p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-block-end: 4rem;
+}
+
+.form-apply {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  width: 75%;
+  gap: 0.8rem;
+  margin-block-end: 4rem;
+}
+
+.input-group-apply:nth-child(1) {
+  grid-column: 1 / 2;
+}
+
+.input-group-apply:nth-child(2) {
+  grid-column: 2 / 3;
+}
+
+.input-group-apply:nth-child(3) {
+  grid-column: 1 / 2;
+}
+
+.input-group-apply:nth-child(4) {
+  grid-column: 2 / 3;
+}
+
+.input-group-apply:nth-child(5) {
+  grid-column: 1 / 2;
+}
+
+.input-group-apply:nth-child(6) {
+  grid-column: 2 / 3;
+}
+
+.input-group-apply:nth-child(7) {
+  grid-column: 1 / 2;
+}
+
+.input-group-apply:nth-child(8) {
+  grid-column: 2 / 3;
+}
+
+.input-group-apply:nth-child(9) {
+  grid-column: 1 / 2;
+}
+
+.input-group-apply:nth-child(10) {
+  grid-column: 1 / 2;
+}
+
+.input-apply {
+  font-size: 1rem;
+  width: 100%;
+  background-color: var(--color-gray-mix);
+  padding: 10px;
+  border: 1px solid var(--color-gray-mix);
+  border-radius: 0.3rem;
+}
+
+.input-apply::placeholder {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.input-apply:focus {
+  outline: 1px solid var(--color-red);
+}
+
+@media (width <= 56.25em) {
+  .form-apply {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .input-group-apply:nth-child(1) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(2) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(3) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(4) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(5) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(6) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(7) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(8) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(9) {
+    grid-column: 1 / 2;
+  }
+
+  .input-group-apply:nth-child(10) {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (width <= 43.74875em) {
+  .form-apply {
+    width: 100%;
+  }
+
+  .application-heading h3 {
+    font-size: 1.5rem;
+  }
+}

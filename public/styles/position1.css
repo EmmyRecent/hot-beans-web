@@ -1,1 +1,104 @@
-@import "globals";
+@import "globals.css";
+
+.position-description {
+  padding-block-start: 80px;
+}
+
+.position-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.position-heading-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.2rem;
+}
+
+.position-heading h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-red);
+}
+
+.position-heading p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.pay {
+  display: inline-block;
+  background-color: var(--color-gray-mix);
+  padding: 12px 18px;
+  border: 1px solid var(--color-gray-mix);
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.apply-btn {
+  align-self: start;
+  background-color: var(--color-red);
+  padding: 6px 20px;
+  border: 1px solid var(--color-red);
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.apply-btn a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.apply-btn {
+  display: inline-block;
+  background-color: var(--color-red);
+}
+
+.position-requirements h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-block-start: 37px;
+  padding-block-end: 14px;
+}
+
+.position-requirements p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.position-requirements ul {
+  list-style: disc;
+  padding-inline-start: 45px;
+}
+
+.position-requirements li {
+  margin-block-end: 0.2rem;
+}
+
+.more-details {
+  padding-block-start: 13px;
+}
+
+.position-more-info p {
+  padding-block-end: 8px;
+}
+
+.position-more-info {
+  margin-block: 30px;
+}
+
+@media (width <= 43.74875em) {
+  .position-heading {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+  }
+
+  .position-heading-contents h2 {
+    font-size: 1.8rem;
+  }
+}

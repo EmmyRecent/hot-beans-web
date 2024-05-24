@@ -16,8 +16,20 @@ app.get("/", (req, res) => {
   res.render("pages/home.ejs", { currentYear: year });
 });
 
-app.get("/position1", (req, res) => {
-  res.render("pages/position1.ejs");
+app.get("/apply/position1", (req, res) => {
+  res.render("pages/position1.ejs", { currentYear: year });
+});
+
+app.get("/apply/position2", (req, res) => {
+  res.render("pages/position2.ejs", { currentYear: year });
+});
+
+app.get("/apply/position3", (req, res) => {
+  res.render("pages/position3.ejs", { currentYear: year });
+});
+
+app.get("/apply/application-form", (req, res) => {
+  res.render("pages/form.ejs", { currentYear: year });
 });
 
 app.listen(port, (req, res) => {

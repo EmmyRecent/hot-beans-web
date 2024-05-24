@@ -397,6 +397,8 @@
   max-width: 36rem;
 }
 
+/* Footer styles */
+
 .footer {
   color: var(--color-white);
   background-color: var(--color-black);
@@ -504,7 +506,7 @@
 }
 
 /* Tablet screen size */
-@media (width <= 900px) {
+@media (width <= 56.25em) {
   /* Hero tablet styles */
   .hero-wrapper {
     margin-block-end: 2.3rem;
@@ -587,7 +589,7 @@
 
 /* Mobile screen size */
 /* 669.98px  */
-@media (width <= 699.98px) {
+@media (width <= 43.74875em) {
   .hero-headline {
     font-size: 2rem;
   }
@@ -610,6 +612,10 @@
 
   .navigations {
     gap: 3rem;
+  }
+
+  .navigations h3 {
+    font-size: 1.1rem;
   }
 }
 
