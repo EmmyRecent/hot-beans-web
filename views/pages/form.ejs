@@ -28,39 +28,39 @@
         <div class="container">
           <form action="" class="form-apply">
             <div class="input-group-apply">
-              <input type="text" placeholder="First Name" name="First Name" class="input-apply">
+              <input type="text" placeholder="First Name" name="First Name" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="text" placeholder="Last Name" name="Last Name" class="input-apply">
+              <input type="text" placeholder="Last Name" name="Last Name" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="email" placeholder="Email" name="Email" class="input-apply">
+              <input type="email" placeholder="Email" name="Email" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="number" placeholder="Phone Number" name="Phone Number" class="input-apply">
+              <input type="number" placeholder="Phone Number" name="Phone Number" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="text" placeholder="What position are you applying for" name="Position" class="input-apply">
+              <input type="text" placeholder="What position are you applying for" name="Position" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="text" placeholder="Link to your portfolio or linked in profile" name="profile" class="input-apply">
+              <input type="text" placeholder="Link to your portfolio or linked in profile" name="profile" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="file" placeholder="Attach CV" name="CV" class="input-apply">
+              <input type="file" placeholder="Attach CV" name="CV" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="file" placeholder="Attach Resume" name="CV" class="input-apply">
+              <input type="file" placeholder="Attach Resume" name="CV" class="input-apply" required>
             </div>
 
             <div class="input-group-apply">
-              <input type="text" placeholder="Why are you interested in this role?" name="why this role?" class=" input-apply">
+              <input type="text" placeholder="Why are you interested in this role?" name="why this role?" class=" input-apply" required>
             </div>
 
             <input type="submit" value="submit" class="submit-btn input-group-apply">
@@ -71,6 +71,8 @@
   </main>
 
   <%- include("../partials/mfooter.ejs") %>
+
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

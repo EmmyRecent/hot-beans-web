@@ -210,7 +210,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="wrapper">
         <div class="title">Contact Us</div>
 
@@ -231,21 +231,21 @@
           <div class="contact-form">
             <p>Send us a message.</p>
 
-            <form action="#" method="post" class="form">
+            <form action="#" class="form">
               <div class="input-group">
-                <input class="input" placeholder="Full Name" type="text" name="full name" id="fName">
+                <input class="input" placeholder="Full Name" type="text" name="full name" id="fName" required>
               </div>
 
               <div class="input-group">
-                <input class="input" placeholder="Email" type="email" name="email" id="email">
+                <input class="input" placeholder="Email" type="email" name="email" id="email" required>
               </div>
 
               <div class="input-group">
-                <input class="input" placeholder="Mobile Number" type="number" name="Mobile Number" id="number">
+                <input class="input" placeholder="Mobile Number" type="number" name="Mobile Number" id="number" required>
               </div>
 
               <div class="input-group">
-                <input class="input" placeholder="Subject" type="text" name="subject" id="subject">
+                <input class="input" placeholder="Subject" type="text" name="subject" id="subject" required>
               </div>
 
               <div class="input-group">
@@ -263,6 +263,8 @@
   </main>
 
   <%- include("../partials/footer.ejs") %>
+
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

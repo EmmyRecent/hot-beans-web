@@ -67,6 +67,10 @@ textarea {
   resize: none;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .wrapper {
   width: min(1196px, calc(100% - 32px));
   margin-inline: auto;
