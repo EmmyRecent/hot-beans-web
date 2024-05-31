@@ -18,7 +18,5 @@ jspm_packages/
 .env.production.local
 .env.local
 
-
-
-
-
+# Deployment
+.vercel
