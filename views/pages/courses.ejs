@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/courses.css">
+  <!-- google fonts: Roboto, Archivo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Courses</title>
+</head>
+
+<body>
+  <%- include("../partials/header.ejs") %>
+
+  <main>
+    <section class="courses">
+      <div class="wrapper">
+        <h3>Web Courses</h3>
+
+        <p>At Hotbeans we encourage learning all the time. here we will list Web Courses available for different skill types to test yourself and improve your knowledge. Being successful within these courses could lead to a job within our business</p>
+
+        <div class="course-level">
+          <h4>BEGINNER</h4>
+
+          <p>These courses are for people who are just starting to out in web development and want to learn how to do the basics. Here are some sites we like and we think you will like too</p>
+
+          <a href="https://www.udemy.com/course/the-art-of-doing-web-development-for-beginners/?couponCode=OF52424">Udemy.com</a>
+        </div>
+
+        <div class="course-level">
+          <h4>INTERMEDIATE</h4>
+
+          <p>These courses are for people who have a basic understanding of web development and want to improve these skills while learning new and more difficult techniques. Here are some sites we like and we think you will like too</p>
+
+          <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=OF52424">Udemy.com</a>
+        </div>
+
+        <div class="course-level">
+          <h4>ADVANCED</h4>
+
+          <p>These courses are for people who have a strong understanding of web development and want to improve their skills while learning new and much more complex skills and techniques. Here are some sites we like and we think you will like too.</p>
+
+          <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/?kw=react&src=sac&couponCode=OF52424">Udemy.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- include("../partials/mfooter.ejs") %>
+
+  <script src="/js/index.js"></script>
+</body>
+
+</html>

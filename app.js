@@ -32,6 +32,10 @@ app.get("/apply/application-form", (req, res) => {
   res.render("pages/form.ejs", { currentYear: year });
 });
 
+app.get("/courses", (req, res) => {
+  res.render("pages/courses.ejs", { currentYear: year });
+});
+
 app.listen(port, (req, res) => {
   console.log(`Server running on port ${port}`);
 });

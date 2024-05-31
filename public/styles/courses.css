@@ -1,0 +1,56 @@
+@import "globals.css";
+
+.courses {
+  padding-block-start: 80px;
+}
+
+.courses h3 {
+  font-size: 2rem;
+  color: var(--color-red);
+  margin-block-end: 1.4rem;
+}
+
+.courses p {
+  font-size: 1rem;
+  margin-block-end: 2.5rem;
+}
+
+.course-level {
+  padding-block-end: 3.8rem;
+}
+
+.course-level > h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-block-end: 1.1rem;
+}
+
+.course-level > p {
+  font-size: 1rem;
+  margin-block-end: 1.1rem;
+}
+
+.course-level > a {
+  font-size: 1rem;
+  color: var(--color-black);
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+.course-level > a:hover {
+  color: var(--color-red);
+}
+
+@media (width <= 56.25em) {
+  .courses h3 {
+    font-size: 1.7rem;
+  }
+
+  .course-level {
+    padding-block-end: 3rem;
+  }
+
+  .course-level > h4 {
+    font-size: 1.2rem;
+  }
+}
