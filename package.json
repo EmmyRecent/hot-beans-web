@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run server\" \"npm run browser-sync\"",
-    "server": "nodemon app.js",
-    "browser-sync": "browser-sync start --proxy 'localhost:3000' --files 'public/**/*.*, views/**/*.*' --port 4000 --no-open --no-notify"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "Emmy",
@@ -18,6 +16,7 @@
     "browser-sync": "^3.0.2",
     "concurrently": "^8.2.2",
     "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "nodemon": "^3.1.2"
   }
 }
