@@ -39,3 +39,6 @@ app.get("/courses", (req, res) => {
 app.listen(port, (req, res) => {
   console.log(`Server running on port ${port}`);
 });
+
+// Export the app for Vercel
+module.exports = app;
