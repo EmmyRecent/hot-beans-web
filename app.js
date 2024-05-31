@@ -9,11 +9,6 @@ const year = date.getFullYear();
 // Serve static files
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
-// Error handling middleware;
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something broke!");
-});
 
 app.set("view engine", "ejs");
 
@@ -44,5 +39,3 @@ app.get("/courses", (req, res) => {
 app.listen(port, (req, res) => {
   console.log(`Server running on port ${port}`);
 });
-
-module.exports = app;
