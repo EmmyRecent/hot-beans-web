@@ -2,13 +2,18 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const date = new Date();
 const year = date.getFullYear();
 
 // Serve static files
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+// Error handling middleware;
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
+});
 
 app.set("view engine", "ejs");
 
